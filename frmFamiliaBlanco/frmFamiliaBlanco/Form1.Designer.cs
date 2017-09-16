@@ -66,7 +66,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(11, 219);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(311, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(373, 75);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
@@ -85,7 +85,7 @@
             this.btnProveedor.Location = new System.Drawing.Point(219, 183);
             this.btnProveedor.Margin = new System.Windows.Forms.Padding(2);
             this.btnProveedor.Name = "btnProveedor";
-            this.btnProveedor.Size = new System.Drawing.Size(79, 20);
+            this.btnProveedor.Size = new System.Drawing.Size(81, 20);
             this.btnProveedor.TabIndex = 32;
             this.btnProveedor.Text = "+Proveedor";
             this.btnProveedor.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@
             this.btnCategoria.Location = new System.Drawing.Point(219, 153);
             this.btnCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategoria.Name = "btnCategoria";
-            this.btnCategoria.Size = new System.Drawing.Size(79, 20);
+            this.btnCategoria.Size = new System.Drawing.Size(81, 26);
             this.btnCategoria.TabIndex = 26;
             this.btnCategoria.Text = "+Categoría";
             this.btnCategoria.UseVisualStyleBackColor = true;
