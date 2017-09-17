@@ -172,6 +172,7 @@
             this.btnProvNuevo.TabIndex = 58;
             this.btnProvNuevo.Text = "+";
             this.btnProvNuevo.UseVisualStyleBackColor = true;
+            this.btnProvNuevo.Click += new System.EventHandler(this.btnProvNuevo_Click);
             // 
             // btnProvAgregar
             // 

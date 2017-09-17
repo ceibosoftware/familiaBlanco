@@ -37,6 +37,10 @@ namespace frmFamiliaBlanco
 
         }
 
-     
+        private void btnProvNuevo_Click(object sender, EventArgs e)
+        {
+            frmAgregarProveedor form = new frmAgregarProveedor();
+            form.ShowDialog();
+        }
     }
 }
