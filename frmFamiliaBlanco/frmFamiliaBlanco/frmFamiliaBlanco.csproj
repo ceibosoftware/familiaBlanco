@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,69 +46,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAgregarContacto.cs">
+    <Compile Include="Proveedores\frmAgregarContacto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarContacto.Designer.cs">
+    <Compile Include="Proveedores\frmAgregarContacto.Designer.cs">
       <DependentUpon>frmAgregarContacto.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarProducto.cs">
+    <Compile Include="Productos\frmAgregarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarProducto.Designer.cs">
+    <Compile Include="Productos\frmAgregarProducto.Designer.cs">
       <DependentUpon>frmAgregarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarProveedor.cs">
+    <Compile Include="Proveedores\frmAgregarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarProveedor.Designer.cs">
+    <Compile Include="Proveedores\frmAgregarProveedor.Designer.cs">
       <DependentUpon>frmAgregarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmModificarProducto.cs">
+    <Compile Include="Productos\frmModificarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmModificarProducto.Designer.cs">
+    <Compile Include="Productos\frmModificarProducto.Designer.cs">
       <DependentUpon>frmModificarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmModificarProveedor.cs">
+    <Compile Include="Proveedores\frmModificarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmModificarProveedor.Designer.cs">
+    <Compile Include="Proveedores\frmModificarProveedor.Designer.cs">
       <DependentUpon>frmModificarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="Productos\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
+    <Compile Include="Productos\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProveedores.cs">
+    <Compile Include="Proveedores\frmProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProveedores.Designer.cs">
+    <Compile Include="Proveedores\frmProveedores.Designer.cs">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAgregarContacto.resx">
+    <EmbeddedResource Include="Proveedores\frmAgregarContacto.resx">
       <DependentUpon>frmAgregarContacto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarProducto.resx">
+    <EmbeddedResource Include="Productos\frmAgregarProducto.resx">
       <DependentUpon>frmAgregarProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarProveedor.resx">
+    <EmbeddedResource Include="Proveedores\frmAgregarProveedor.resx">
       <DependentUpon>frmAgregarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmModificarProducto.resx">
+    <EmbeddedResource Include="Productos\frmModificarProducto.resx">
       <DependentUpon>frmModificarProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmModificarProveedor.resx">
+    <EmbeddedResource Include="Proveedores\frmModificarProveedor.resx">
       <DependentUpon>frmModificarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
+    <EmbeddedResource Include="Productos\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProveedores.resx">
+    <EmbeddedResource Include="Proveedores\frmProveedores.resx">
       <DependentUpon>frmProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
