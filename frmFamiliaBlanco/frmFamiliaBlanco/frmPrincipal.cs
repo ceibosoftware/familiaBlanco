@@ -27,5 +27,17 @@ namespace frmFamiliaBlanco
             frmAgregarProducto form  = new frmAgregarProducto();
             form.ShowDialog();
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            frmModificarProducto form = new frmModificarProducto();
+            form.ShowDialog();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProveedores form = new frmProveedores();
+            form.ShowDialog();
+        }
     }
 }

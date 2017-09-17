@@ -107,8 +107,9 @@
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // devolucionesToolStripMenuItem
             // 
@@ -127,7 +128,7 @@
             // gbProductos
             // 
             this.gbProductos.Controls.Add(this.ltsProductos);
-            this.gbProductos.Location = new System.Drawing.Point(12, 82);
+            this.gbProductos.Location = new System.Drawing.Point(12, 74);
             this.gbProductos.Name = "gbProductos";
             this.gbProductos.Size = new System.Drawing.Size(260, 374);
             this.gbProductos.TabIndex = 50;
@@ -142,7 +143,7 @@
             this.gbDetalle.Controls.Add(this.lblCategoria);
             this.gbDetalle.Controls.Add(this.txtDescripcion);
             this.gbDetalle.Controls.Add(this.lblDescripcion);
-            this.gbDetalle.Location = new System.Drawing.Point(296, 82);
+            this.gbDetalle.Location = new System.Drawing.Point(296, 74);
             this.gbDetalle.Name = "gbDetalle";
             this.gbDetalle.Size = new System.Drawing.Size(272, 331);
             this.gbDetalle.TabIndex = 51;
@@ -204,7 +205,7 @@
             // 
             // txtFiltro
             // 
-            this.txtFiltro.Location = new System.Drawing.Point(296, 40);
+            this.txtFiltro.Location = new System.Drawing.Point(296, 37);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(152, 20);
             this.txtFiltro.TabIndex = 39;
@@ -245,6 +246,7 @@
             this.btnModificar.TabIndex = 53;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
