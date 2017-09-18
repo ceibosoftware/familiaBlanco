@@ -107,7 +107,7 @@
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
@@ -179,11 +179,12 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(24, 270);
+            this.lblCategoria.Location = new System.Drawing.Point(8, 270);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(35, 13);
+            this.lblCategoria.Size = new System.Drawing.Size(76, 13);
             this.lblCategoria.TabIndex = 54;
-            this.lblCategoria.Text = "label6";
+            this.lblCategoria.Text = "Nosequevaqui";
+            this.lblCategoria.Click += new System.EventHandler(this.lblCategoria_Click);
             // 
             // txtDescripcion
             // 

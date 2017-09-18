@@ -39,5 +39,10 @@ namespace frmFamiliaBlanco
             frmProveedores form = new frmProveedores();
             form.ShowDialog();
         }
+
+        private void lblCategoria_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
