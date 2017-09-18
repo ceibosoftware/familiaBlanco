@@ -40,8 +40,8 @@
             this.ltsProductos = new System.Windows.Forms.ListBox();
             this.gbProductos = new System.Windows.Forms.GroupBox();
             this.gbDetalle = new System.Windows.Forms.GroupBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.ltsProveedores = new System.Windows.Forms.ListBox();
-            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.lblProveedores = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             this.entradaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(578, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(597, 24);
             this.menuStrip1.TabIndex = 37;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -107,7 +107,7 @@
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
@@ -124,6 +124,7 @@
             this.ltsProductos.Name = "ltsProductos";
             this.ltsProductos.Size = new System.Drawing.Size(207, 342);
             this.ltsProductos.TabIndex = 38;
+            this.ltsProductos.SelectedValueChanged += new System.EventHandler(this.ltsProductos_SelectedValueChanged);
             // 
             // gbProductos
             // 
@@ -137,8 +138,8 @@
             // 
             // gbDetalle
             // 
+            this.gbDetalle.Controls.Add(this.txtCategoria);
             this.gbDetalle.Controls.Add(this.ltsProveedores);
-            this.gbDetalle.Controls.Add(this.cmbCategoria);
             this.gbDetalle.Controls.Add(this.lblProveedores);
             this.gbDetalle.Controls.Add(this.lblCategoria);
             this.gbDetalle.Controls.Add(this.txtDescripcion);
@@ -150,6 +151,14 @@
             this.gbDetalle.TabStop = false;
             this.gbDetalle.Text = "Detalle";
             // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Location = new System.Drawing.Point(90, 270);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.ReadOnly = true;
+            this.txtCategoria.Size = new System.Drawing.Size(152, 20);
+            this.txtCategoria.TabIndex = 55;
+            // 
             // ltsProveedores
             // 
             this.ltsProveedores.FormattingEnabled = true;
@@ -157,15 +166,6 @@
             this.ltsProveedores.Name = "ltsProveedores";
             this.ltsProveedores.Size = new System.Drawing.Size(152, 108);
             this.ltsProveedores.TabIndex = 50;
-            // 
-            // cmbCategoria
-            // 
-            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(90, 270);
-            this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(152, 21);
-            this.cmbCategoria.TabIndex = 55;
             // 
             // lblProveedores
             // 
@@ -181,9 +181,9 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Location = new System.Drawing.Point(24, 270);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(35, 13);
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
             this.lblCategoria.TabIndex = 54;
-            this.lblCategoria.Text = "label6";
+            this.lblCategoria.Text = "Categoria";
             // 
             // txtDescripcion
             // 
@@ -209,11 +209,15 @@
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(152, 20);
             this.txtFiltro.TabIndex = 39;
+            this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
             // 
             // cmbFiltro
             // 
             this.cmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFiltro.FormattingEnabled = true;
+            this.cmbFiltro.Items.AddRange(new object[] {
+            "Nombre",
+            "Categoria"});
             this.cmbFiltro.Location = new System.Drawing.Point(120, 37);
             this.cmbFiltro.Name = "cmbFiltro";
             this.cmbFiltro.Size = new System.Drawing.Size(152, 21);
@@ -261,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 460);
+            this.ClientSize = new System.Drawing.Size(597, 463);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAceptar);
@@ -276,6 +280,7 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.gbProductos.ResumeLayout(false);
@@ -299,7 +304,6 @@
         private System.Windows.Forms.GroupBox gbProductos;
         private System.Windows.Forms.GroupBox gbDetalle;
         private System.Windows.Forms.ListBox ltsProveedores;
-        private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label lblProveedores;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.TextBox txtDescripcion;
@@ -310,6 +314,7 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.TextBox txtCategoria;
     }
 }
 
