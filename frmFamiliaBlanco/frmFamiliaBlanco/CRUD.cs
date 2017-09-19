@@ -27,8 +27,8 @@ namespace frmFamiliaBlanco
                 var result = MessageBox.Show("Conexion fallida", "", buttons);
             }
         }
-        // consulta para llenar con todos los datos una listBox , vamos a ir agregando elementos a llenar 
-        public DataTable Consulta(String sql, ListBox tabla = null)
+        // consulta para llenar con todos los datos una listBox , vamos a ir agregando elementos a llenar, (combo y tabla son parametros opcionales por eso estan como null) 
+        public void Consulta(String sql, ListBox tabla = null, ComboBox combo = null)
         {
             try
             {
@@ -38,12 +38,19 @@ namespace frmFamiliaBlanco
                 DataTable DT = new DataTable();
                 //Pasamos la informacion del dataAdapter (DA) al data (DT) 
                 DA.Fill(DT);
-                tabla.DataSource = DT;
-                return DT;
+                if(tabla != null)
+                {
+                    tabla.DataSource = DT;
+                }else if(combo != null)
+                {
+                    combo.DataSource = DT;
+                }
+             
+                
             }
             catch
             {
-                return null;
+                
                 var result = MessageBox.Show("No se pudo realizar la consulta", "Error",buttons,MessageBoxIcon.Warning);
             }
         }

@@ -32,6 +32,7 @@ namespace frmFamiliaBlanco
         {
             frmAgregarProducto form = new frmAgregarProducto();
             form.ShowDialog();
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -86,11 +87,12 @@ namespace frmFamiliaBlanco
             String consulta;
 
             if (cmbFiltro.Text == "Nombre")
-            {
+            {   //Busca por nombre
                consulta = "SELECT* FROM productos WHERE productos.nombre LIKE '%' @valor '%'";
                productos =  conexion.ConsultaParametrizada(consulta , txtFiltro.Text);
             }else if(cmbFiltro.Text == "Categoria")
             {
+                //busca por nombre de categoria (posibilidad de agregar combobox)
                consulta = "SELECT productos.nombre ,categorias.idCategorias FROM categorias , productos WHERE categorias.nombre LIKE  '%' @valor '%' and categorias.idCategorias = productos.FK_idCategorias";
                productos = conexion.ConsultaParametrizada(consulta, txtFiltro.Text);
             }

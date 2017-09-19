@@ -31,10 +31,12 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.gbDetalle = new System.Windows.Forms.GroupBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.gbCategoria = new System.Windows.Forms.GroupBox();
+            this.btnCategNueva = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.gbProveedores = new System.Windows.Forms.GroupBox();
             this.btnProvEliminar = new System.Windows.Forms.Button();
             this.lblProvNuevo = new System.Windows.Forms.Label();
@@ -47,15 +49,13 @@
             this.cmbFiltro = new System.Windows.Forms.ComboBox();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.ltsProveedores = new System.Windows.Forms.ListBox();
-            this.gbCategoria = new System.Windows.Forms.GroupBox();
-            this.btnCategNueva = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             this.gbDetalle.SuspendLayout();
-            this.gbProveedores.SuspendLayout();
             this.gbCategoria.SuspendLayout();
+            this.gbProveedores.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -92,39 +92,62 @@
             this.gbDetalle.TabStop = false;
             this.gbDetalle.Text = "Agregar ";
             // 
-            // lblNombre
+            // gbCategoria
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(6, 38);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(44, 13);
-            this.lblNombre.TabIndex = 57;
-            this.lblNombre.Text = "Nombre";
+            this.gbCategoria.Controls.Add(this.btnCategNueva);
+            this.gbCategoria.Controls.Add(this.label5);
+            this.gbCategoria.Controls.Add(this.txtBuscar);
+            this.gbCategoria.Controls.Add(this.lblCategoria);
+            this.gbCategoria.Controls.Add(this.cmbCategoria);
+            this.gbCategoria.Location = new System.Drawing.Point(261, 35);
+            this.gbCategoria.Name = "gbCategoria";
+            this.gbCategoria.Size = new System.Drawing.Size(280, 106);
+            this.gbCategoria.TabIndex = 61;
+            this.gbCategoria.TabStop = false;
+            this.gbCategoria.Text = "Agregar Categoria";
             // 
-            // txtNombre
+            // btnCategNueva
             // 
-            this.txtNombre.Location = new System.Drawing.Point(76, 35);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(152, 20);
-            this.txtNombre.TabIndex = 56;
+            this.btnCategNueva.Location = new System.Drawing.Point(239, 60);
+            this.btnCategNueva.Name = "btnCategNueva";
+            this.btnCategNueva.Size = new System.Drawing.Size(30, 21);
+            this.btnCategNueva.TabIndex = 59;
+            this.btnCategNueva.Text = "+";
+            this.btnCategNueva.UseVisualStyleBackColor = true;
             // 
-            // txtDescripcion
+            // label5
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(76, 75);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.ReadOnly = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(152, 93);
-            this.txtDescripcion.TabIndex = 52;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(20, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 58;
+            this.label5.Text = "Buscar";
             // 
-            // lblDescripcion
+            // txtBuscar
             // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(7, 75);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
-            this.lblDescripcion.TabIndex = 53;
-            this.lblDescripcion.Text = "Descripción";
+            this.txtBuscar.Location = new System.Drawing.Point(76, 30);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(157, 20);
+            this.txtBuscar.TabIndex = 56;
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(20, 63);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoria.TabIndex = 54;
+            this.lblCategoria.Text = "Categoria";
+            // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(76, 60);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(157, 21);
+            this.cmbCategoria.TabIndex = 55;
             // 
             // gbProveedores
             // 
@@ -222,6 +245,9 @@
             // 
             this.cmbFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFiltro.FormattingEnabled = true;
+            this.cmbFiltro.Items.AddRange(new object[] {
+            "Nombre",
+            "Categoria"});
             this.cmbFiltro.Location = new System.Drawing.Point(59, 41);
             this.cmbFiltro.Name = "cmbFiltro";
             this.cmbFiltro.Size = new System.Drawing.Size(159, 21);
@@ -233,6 +259,7 @@
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(157, 20);
             this.txtFiltro.TabIndex = 51;
+            this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
             // 
             // ltsProveedores
             // 
@@ -242,62 +269,39 @@
             this.ltsProveedores.Size = new System.Drawing.Size(163, 134);
             this.ltsProveedores.TabIndex = 50;
             // 
-            // gbCategoria
+            // lblNombre
             // 
-            this.gbCategoria.Controls.Add(this.btnCategNueva);
-            this.gbCategoria.Controls.Add(this.label5);
-            this.gbCategoria.Controls.Add(this.txtBuscar);
-            this.gbCategoria.Controls.Add(this.lblCategoria);
-            this.gbCategoria.Controls.Add(this.cmbCategoria);
-            this.gbCategoria.Location = new System.Drawing.Point(261, 35);
-            this.gbCategoria.Name = "gbCategoria";
-            this.gbCategoria.Size = new System.Drawing.Size(280, 106);
-            this.gbCategoria.TabIndex = 61;
-            this.gbCategoria.TabStop = false;
-            this.gbCategoria.Text = "Agregar Categoria";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(6, 38);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.TabIndex = 57;
+            this.lblNombre.Text = "Nombre";
             // 
-            // btnCategNueva
+            // txtNombre
             // 
-            this.btnCategNueva.Location = new System.Drawing.Point(239, 60);
-            this.btnCategNueva.Name = "btnCategNueva";
-            this.btnCategNueva.Size = new System.Drawing.Size(30, 21);
-            this.btnCategNueva.TabIndex = 59;
-            this.btnCategNueva.Text = "+";
-            this.btnCategNueva.UseVisualStyleBackColor = true;
+            this.txtNombre.Location = new System.Drawing.Point(76, 35);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(152, 20);
+            this.txtNombre.TabIndex = 56;
             // 
-            // label5
+            // txtDescripcion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 58;
-            this.label5.Text = "Buscar";
+            this.txtDescripcion.Location = new System.Drawing.Point(76, 75);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.ReadOnly = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(152, 93);
+            this.txtDescripcion.TabIndex = 52;
             // 
-            // txtBuscar
+            // lblDescripcion
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(76, 30);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(157, 20);
-            this.txtBuscar.TabIndex = 56;
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(20, 63);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
-            this.lblCategoria.TabIndex = 54;
-            this.lblCategoria.Text = "Categoria";
-            // 
-            // cmbCategoria
-            // 
-            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(76, 60);
-            this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(157, 21);
-            this.cmbCategoria.TabIndex = 55;
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(7, 75);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lblDescripcion.TabIndex = 53;
+            this.lblDescripcion.Text = "Descripción";
             // 
             // frmAgregarProducto
             // 
@@ -313,10 +317,10 @@
             this.Load += new System.EventHandler(this.frmAgregarProducto_Load);
             this.gbDetalle.ResumeLayout(false);
             this.gbDetalle.PerformLayout();
-            this.gbProveedores.ResumeLayout(false);
-            this.gbProveedores.PerformLayout();
             this.gbCategoria.ResumeLayout(false);
             this.gbCategoria.PerformLayout();
+            this.gbProveedores.ResumeLayout(false);
+            this.gbProveedores.PerformLayout();
             this.ResumeLayout(false);
 
         }

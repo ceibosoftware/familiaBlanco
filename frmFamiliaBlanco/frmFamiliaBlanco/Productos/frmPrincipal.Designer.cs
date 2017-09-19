@@ -49,7 +49,7 @@
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.cmbFiltro = new System.Windows.Forms.ComboBox();
             this.LblFiltro = new System.Windows.Forms.Label();
-            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -232,15 +232,15 @@
             this.LblFiltro.TabIndex = 41;
             this.LblFiltro.Text = "Filtrar por";
             // 
-            // btnAceptar
+            // btnAgregar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(296, 424);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 52;
-            this.btnAceptar.Text = "Agregar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            this.btnAgregar.Location = new System.Drawing.Point(296, 424);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 52;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnModificar
             // 
@@ -268,7 +268,7 @@
             this.ClientSize = new System.Drawing.Size(597, 463);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.gbDetalle);
             this.Controls.Add(this.gbProductos);
             this.Controls.Add(this.LblFiltro);
@@ -311,7 +311,7 @@
         private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.ComboBox cmbFiltro;
         private System.Windows.Forms.Label LblFiltro;
-        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtCategoria;
