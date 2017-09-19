@@ -25,6 +25,7 @@ namespace frmFamiliaBlanco
             LoadListaProducto();
             //carga de categorias en comboBox
             LoadListaComboCategoria();
+            
             cmbFiltro.SelectedIndex = 0;
         }
 
@@ -86,6 +87,20 @@ namespace frmFamiliaBlanco
             cmbCategoria.ValueMember = "idCategorias";
                 
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            string consulta;
+            DataSet categorias = new DataSet();
+            
+            //Busca por nombre
+            consulta = "SELECT * FROM categorias WHERE categorias.nombre LIKE '%' @valor '%'";
+            categorias = conexion.ConsultaParametrizada(consulta, txtBuscar.Text);
+            
+            cmbCategoria.DataSource = categorias.Tables[0];
+        }
+
+       
     }
 }
 
