@@ -28,5 +28,10 @@ namespace frmFamiliaBlanco
             frmAgregarProveedor form = new frmAgregarProveedor();
             form.ShowDialog();
         }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

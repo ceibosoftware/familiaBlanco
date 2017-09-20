@@ -16,5 +16,15 @@ namespace frmFamiliaBlanco
         {
             InitializeComponent();
         }
+
+        private void gbProductos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmAgregarContacto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

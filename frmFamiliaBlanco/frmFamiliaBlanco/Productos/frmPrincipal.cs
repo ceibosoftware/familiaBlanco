@@ -100,5 +100,60 @@ namespace frmFamiliaBlanco
             ltsProductos.DataSource = productos.Tables[0];
     
         }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbDetalle_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuTextbox1_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbProductos_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ltsProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomTextbox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
