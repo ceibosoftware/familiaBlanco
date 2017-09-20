@@ -16,5 +16,10 @@ namespace frmFamiliaBlanco.Categorias
         {
             InitializeComponent();
         }
+
+        private void frmAgregarCategoria_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

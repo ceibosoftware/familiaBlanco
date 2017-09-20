@@ -99,7 +99,7 @@ namespace frmFamiliaBlanco
             
             cmbCategoria.DataSource = categorias.Tables[0];
         }
-
+        
        
     }
 }

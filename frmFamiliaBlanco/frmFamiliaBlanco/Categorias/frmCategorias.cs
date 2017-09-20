@@ -28,5 +28,7 @@ namespace frmFamiliaBlanco.Categorias
             frmModificarCategoria form = new frmModificarCategoria();
             form.ShowDialog();
         }
+
+        
     }
 }
