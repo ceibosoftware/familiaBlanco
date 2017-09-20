@@ -90,6 +90,7 @@
             this.Controls.Add(this.btnAceptarCategoria);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmModificarCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmModificarCategoria";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

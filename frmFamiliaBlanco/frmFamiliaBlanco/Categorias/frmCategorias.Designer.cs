@@ -114,6 +114,7 @@
             this.Controls.Add(this.btnAgregarCategoria);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCategorias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCategorias";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

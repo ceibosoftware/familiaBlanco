@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnCancelarCategoria = new System.Windows.Forms.Button();
             this.btnAceptarCategoria = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -47,6 +47,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar Categoria";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(92, 40);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 20);
+            this.textBox1.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -55,13 +62,6 @@
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(92, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 1;
             // 
             // btnCancelarCategoria
             // 
@@ -90,6 +90,7 @@
             this.Controls.Add(this.btnAceptarCategoria);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAgregarCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAgregarCategoria";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

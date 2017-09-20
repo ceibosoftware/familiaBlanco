@@ -100,5 +100,22 @@ namespace frmFamiliaBlanco
             ltsProductos.DataSource = productos.Tables[0];
     
         }
+
+        private void entradaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProveedores form = new frmProveedores();
+            form.ShowDialog();
+        }
+
+        private void categoriasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Categorias.frmCategorias form = new Categorias.frmCategorias();
+            form.ShowDialog();
+        }
     }
 }

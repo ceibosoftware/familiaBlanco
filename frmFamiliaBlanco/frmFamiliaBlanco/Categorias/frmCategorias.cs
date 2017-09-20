@@ -21,6 +21,7 @@ namespace frmFamiliaBlanco.Categorias
         {
             frmAgregarCategoria form = new frmAgregarCategoria();
             form.ShowDialog();
+            
         }
 
         private void btnModificarCategoria_Click(object sender, EventArgs e)
