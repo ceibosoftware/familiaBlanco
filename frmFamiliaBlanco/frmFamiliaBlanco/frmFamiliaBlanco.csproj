@@ -32,7 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categorias\frmAgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\frmAgregarCategoria.Designer.cs">
+      <DependentUpon>frmAgregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias\frmCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\frmCategorias.Designer.cs">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias\frmModificarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\frmModificarCategoria.Designer.cs">
+      <DependentUpon>frmModificarCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRUD.cs" />
     <Compile Include="Proveedores\frmAgregarContacto.cs">
       <SubType>Form</SubType>
@@ -91,6 +111,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Categorias\frmAgregarCategoria.resx">
+      <DependentUpon>frmAgregarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias\frmCategorias.resx">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias\frmModificarCategoria.resx">
+      <DependentUpon>frmModificarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Proveedores\frmAgregarContacto.resx">
       <DependentUpon>frmAgregarContacto.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

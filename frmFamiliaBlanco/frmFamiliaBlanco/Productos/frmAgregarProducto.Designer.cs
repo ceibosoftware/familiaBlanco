@@ -206,7 +206,7 @@
             this.btnProvAgregar.TabIndex = 57;
             this.btnProvAgregar.Text = "->";
             this.btnProvAgregar.UseVisualStyleBackColor = true;
-            this.btnProvAgregar.Click += new System.EventHandler(this.btnProvAgregar_Click);
+          //  this.btnProvAgregar.Click += new System.EventHandler(this.btnProvAgregar_Click);
             // 
             // lblProvProductos
             // 
