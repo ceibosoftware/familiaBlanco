@@ -90,6 +90,7 @@
             this.Controls.Add(this.btnAceptarCategoria);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAgregarCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAgregarCategoria";
             this.Load += new System.EventHandler(this.frmAgregarCategoria_Load);
             this.groupBox1.ResumeLayout(false);
