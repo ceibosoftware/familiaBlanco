@@ -34,6 +34,9 @@
             this.gbProveedores = new System.Windows.Forms.GroupBox();
             this.ltsProveedores = new System.Windows.Forms.ListBox();
             this.gbDetalle = new System.Windows.Forms.GroupBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.txtLocalidad = new System.Windows.Forms.TextBox();
             this.dgvContacto = new System.Windows.Forms.DataGridView();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtCP = new System.Windows.Forms.TextBox();
@@ -48,9 +51,6 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.txtLocalidad = new System.Windows.Forms.TextBox();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.gbProveedores.SuspendLayout();
             this.gbDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContacto)).BeginInit();
@@ -98,6 +98,7 @@
             this.ltsProveedores.Name = "ltsProveedores";
             this.ltsProveedores.Size = new System.Drawing.Size(214, 368);
             this.ltsProveedores.TabIndex = 38;
+            this.ltsProveedores.SelectedValueChanged += new System.EventHandler(this.ltsProveedores_SelectedValueChanged);
             // 
             // gbDetalle
             // 
@@ -121,6 +122,31 @@
             this.gbDetalle.TabIndex = 52;
             this.gbDetalle.TabStop = false;
             this.gbDetalle.Text = "Detalle";
+            // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Location = new System.Drawing.Point(324, 55);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.ReadOnly = true;
+            this.txtCategoria.Size = new System.Drawing.Size(156, 20);
+            this.txtCategoria.TabIndex = 57;
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(265, 58);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoria.TabIndex = 56;
+            this.lblCategoria.Text = "Categoria";
+            // 
+            // txtLocalidad
+            // 
+            this.txtLocalidad.Location = new System.Drawing.Point(91, 181);
+            this.txtLocalidad.Name = "txtLocalidad";
+            this.txtLocalidad.ReadOnly = true;
+            this.txtLocalidad.Size = new System.Drawing.Size(156, 20);
+            this.txtLocalidad.TabIndex = 12;
             // 
             // dgvContacto
             // 
@@ -245,31 +271,6 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // txtLocalidad
-            // 
-            this.txtLocalidad.Location = new System.Drawing.Point(91, 181);
-            this.txtLocalidad.Name = "txtLocalidad";
-            this.txtLocalidad.ReadOnly = true;
-            this.txtLocalidad.Size = new System.Drawing.Size(156, 20);
-            this.txtLocalidad.TabIndex = 12;
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(265, 58);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
-            this.lblCategoria.TabIndex = 56;
-            this.lblCategoria.Text = "Categoria";
-            // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Location = new System.Drawing.Point(324, 55);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.ReadOnly = true;
-            this.txtCategoria.Size = new System.Drawing.Size(156, 20);
-            this.txtCategoria.TabIndex = 57;
-            // 
             // frmProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,6 +287,7 @@
             this.Name = "frmProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proveedores";
+            this.Load += new System.EventHandler(this.frmProveedores_Load);
             this.gbProveedores.ResumeLayout(false);
             this.gbDetalle.ResumeLayout(false);
             this.gbDetalle.PerformLayout();
