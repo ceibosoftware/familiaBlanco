@@ -38,6 +38,7 @@
             this.lblRazonSocial = new System.Windows.Forms.Label();
             this.lblCuit = new System.Windows.Forms.Label();
             this.gbProveedor = new System.Windows.Forms.GroupBox();
+            this.btnEliminarContacto = new System.Windows.Forms.Button();
             this.gbCategoria = new System.Windows.Forms.GroupBox();
             this.btnCategNueva = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnEliminarContacto = new System.Windows.Forms.Button();
             this.gbProveedor.SuspendLayout();
             this.gbCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContacto)).BeginInit();
@@ -156,6 +156,15 @@
             this.gbProveedor.TabIndex = 23;
             this.gbProveedor.TabStop = false;
             this.gbProveedor.Text = "Datos Proveedor";
+            // 
+            // btnEliminarContacto
+            // 
+            this.btnEliminarContacto.Location = new System.Drawing.Point(480, 292);
+            this.btnEliminarContacto.Name = "btnEliminarContacto";
+            this.btnEliminarContacto.Size = new System.Drawing.Size(33, 30);
+            this.btnEliminarContacto.TabIndex = 61;
+            this.btnEliminarContacto.Text = "-";
+            this.btnEliminarContacto.UseVisualStyleBackColor = true;
             // 
             // gbCategoria
             // 
@@ -283,15 +292,6 @@
             this.btnAceptar.TabIndex = 59;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminarContacto
-            // 
-            this.btnEliminarContacto.Location = new System.Drawing.Point(480, 292);
-            this.btnEliminarContacto.Name = "btnEliminarContacto";
-            this.btnEliminarContacto.Size = new System.Drawing.Size(33, 30);
-            this.btnEliminarContacto.TabIndex = 61;
-            this.btnEliminarContacto.Text = "-";
-            this.btnEliminarContacto.UseVisualStyleBackColor = true;
             // 
             // frmAgregarProveedor
             // 
