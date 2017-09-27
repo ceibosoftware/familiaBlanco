@@ -65,6 +65,7 @@
             this.btnEliminarCategoria.TabIndex = 57;
             this.btnEliminarCategoria.Text = "Eliminar";
             this.btnEliminarCategoria.UseVisualStyleBackColor = true;
+            this.btnEliminarCategoria.Click += new System.EventHandler(this.btnEliminarCategoria_Click);
             // 
             // btnModificarCategoria
             // 
@@ -116,7 +117,7 @@
             this.Name = "frmCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCategorias";
-          
+            this.Load += new System.EventHandler(this.frmCategorias_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

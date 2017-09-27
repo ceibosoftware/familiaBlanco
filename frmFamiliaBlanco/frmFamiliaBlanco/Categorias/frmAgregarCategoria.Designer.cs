@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAgregarCategoria = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelarCategoria = new System.Windows.Forms.Button();
             this.btnAceptarCategoria = new System.Windows.Forms.Button();
@@ -38,7 +38,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtAgregarCategoria);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(29, 40);
             this.groupBox1.Name = "groupBox1";
@@ -47,12 +47,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar Categoria";
             // 
-            // textBox1
+            // txtAgregarCategoria
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtAgregarCategoria.Location = new System.Drawing.Point(92, 40);
+            this.txtAgregarCategoria.Name = "txtAgregarCategoria";
+            this.txtAgregarCategoria.Size = new System.Drawing.Size(116, 20);
+            this.txtAgregarCategoria.TabIndex = 1;
             // 
             // label1
             // 
@@ -71,6 +71,7 @@
             this.btnCancelarCategoria.TabIndex = 57;
             this.btnCancelarCategoria.Text = "Cancelar";
             this.btnCancelarCategoria.UseVisualStyleBackColor = true;
+            this.btnCancelarCategoria.Click += new System.EventHandler(this.btnCancelarCategoria_Click);
             // 
             // btnAceptarCategoria
             // 
@@ -80,6 +81,7 @@
             this.btnAceptarCategoria.TabIndex = 55;
             this.btnAceptarCategoria.Text = "Aceptar";
             this.btnAceptarCategoria.UseVisualStyleBackColor = true;
+            this.btnAceptarCategoria.Click += new System.EventHandler(this.btnAceptarCategoria_Click);
             // 
             // frmAgregarCategoria
             // 
@@ -102,7 +104,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAgregarCategoria;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelarCategoria;
         private System.Windows.Forms.Button btnAceptarCategoria;

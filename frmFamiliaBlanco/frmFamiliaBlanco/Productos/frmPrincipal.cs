@@ -75,7 +75,7 @@ namespace frmFamiliaBlanco
         private void loadListaProducto()
         {
             String consulta = " Select * from productos ";
-            conexion.Consulta(consulta, ltsProductos);
+            conexion.Consulta(consulta, ltsProductos);  
             ltsProductos.DisplayMember = "nombre";
             ltsProductos.ValueMember = "idProductos";
         }
@@ -117,5 +117,7 @@ namespace frmFamiliaBlanco
             Categorias.frmCategorias form = new Categorias.frmCategorias();
             form.ShowDialog();
         }
+
+       
     }
 }

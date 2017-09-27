@@ -85,7 +85,7 @@
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.categoriasToolStripMenuItem.Text = "categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click_1);
             // 
@@ -126,6 +126,7 @@
             this.ltsProductos.Name = "ltsProductos";
             this.ltsProductos.Size = new System.Drawing.Size(207, 342);
             this.ltsProductos.TabIndex = 38;
+//            this.ltsProductos.SelectedIndexChanged += new System.EventHandler(this.ltsProductos_SelectedIndexChanged);
             this.ltsProductos.SelectedValueChanged += new System.EventHandler(this.ltsProductos_SelectedValueChanged);
             // 
             // gbProductos
